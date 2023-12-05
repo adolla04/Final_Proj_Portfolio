@@ -10,6 +10,24 @@ body {
     background: #fff
 }
 
+nav {
+    background-color: #ffd8de;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
 h1 {
     font-size: 3em;
     margin: 0;
@@ -35,11 +53,21 @@ p {
     line-height: 1.4em;
 }
 
+.imgbox {
+    background:#fff;
+    width: 300px;
+}
+
 img {
     width: 100%;
 }
 
-.float {
-    float: left;
+.small {
     width: 100px;
+    padding: 10px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
 }
