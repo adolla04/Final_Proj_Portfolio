@@ -29,6 +29,7 @@ li {
 }
 
 h1 {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 3em;
     margin: 0;
 }
@@ -49,6 +50,7 @@ article {
     padding: 20px;
 }
 
+
 p {
     line-height: 1.4em;
 }
@@ -62,6 +64,10 @@ img {
     width: 100%;
 }
 
+.right {
+    box-align: right;
+}
+
 .small {
     width: 100px;
     padding: 10px;
@@ -70,4 +76,8 @@ img {
 .sticky {
     position: sticky;
     top: 0;
+}
+
+.navbar {
+    align-content: end;
 }
