@@ -25,5 +25,50 @@
 
     <h2 class="look">GRAPHIC DESIGN</h2>
     
+    <div class="row">
+      <div class="col">
+         <img src="images/ZRasico_project5_bw.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Fairies and Flowers Monochrome Version">
+      </div>
+      <div class="col">
+         <img src="images/ZRasico_project5_temp.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Fairies and Flowers Temperature Version">
+      </div>
+      <div class="col">
+         <img src="images/Zrasico_project5_extension+proportion.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Fairies and Flowers Extension and Proportion Version">
+      </div>
+    </div>
+    
+
+         
+    <div id="Lightbox" class="modal">
+      <span class="close pointer" onclick="closeLightbox()">&times;</span>
+      <div class="modal-content">
+        <div class="slide">
+            <img src="images/ZRasico_project5_bw.png" class="image-slide" alt="Fairies and Flowers Monochrome Version">
+        </div>
+        <div class="slide">
+            <img src="images/ZRasico_project5_temp.jpg" class="image-slide" alt="Fairies and Flowers Temperature Version">
+        </div>    
+        <div class="slide">
+            <img src="images/Zrasico_project5_extension+proportion.jpg" class="image-slide" alt="Fairies and Flowers Extension and Proportion Version">
+        </div>
+      
+        <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      
+        <div class="dots">
+          <div class="col">
+            <img src="images/ZRasico_project5_bw.png" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="Fairies and Flowers Monochrome Version">
+          </div>
+          <div class="col">
+            <img src="images/ZRasico_project5_temp.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Fairies and Flowers Temperature Version.">
+          </div>
+          <div class="col">
+            <img src="images/Zrasico_project5_extension+proportion.jpg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Fairies and Flowers Extension and Proportion Version">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
     <script src="index.js"></script>
   </body>
