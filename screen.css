@@ -15,6 +15,7 @@ nav {
     margin: auto;
     padding: 10px;
     display: flex;
+    align-items: left;
 }
 
 ul {
@@ -35,8 +36,17 @@ h1 {
 }
 
 h2 {
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     font-weight: 100;
+    padding: 10px;
+}
+
+
+header {
+    display: flex; 
+    align-items: right center; 
+    justify-content: center;
 }
 
 h3 {
@@ -63,13 +73,32 @@ p {
 img {
     width: 100%;
 }
+.look {
+    align-items: center;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+article .title {
+    background-color: #222;
+}
 
 .right {
     box-align: right;
 }
 
+.floatleft {
+    float: left;
+}
+.smallvrt {
+    max-width: 100px;
+    max-height: 200px;
+    padding: 10px;
+}
 .small {
-    width: 100px;
+    max-width: 200px;
+    max-height: 200px;
     padding: 10px;
 }
 
@@ -80,4 +109,24 @@ img {
 
 .navbar {
     align-content: end;
+}
+
+#sector {
+    display: flex;
+}
+
+.aspect:nth-of-type(1) {
+    flex: 2;
+}
+
+.aspect:nth-of-type(2) {
+    flex: 1;
+}
+
+.aspect:nth-of-type(3) {
+    flex: 2;
+}
+
+.aspect:nth-of-type(4) {
+    flex: 1;
 }
