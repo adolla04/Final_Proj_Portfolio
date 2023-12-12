@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Art by Zoe</title>
     <link rel="stylesheet" href="screen.css">
-    <link href="path/to/lightbox.css" rel="stylesheet" />
+    <link href="styles/lightbox.min.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="sticky">
@@ -38,61 +38,14 @@
       <div class="column">
         <img src="images/Danger in the valley.PNG" onclick="openModal();currentSlide(4)" class="hover-shadow">
       </div>
-    </div>
-    
-    <!-- The Modal/Lightbox -->
-    <div id="myModal" class="modal">
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-      <div class="modal-content">
-    
-        <div class="mySlides">
-          <div class="numbertext">1 / 4</div>
-          <img src="images/Mariposa_Character.PNG" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-          <div class="numbertext">2 / 4</div>
-          <img src="images/Butterfly_Blaster.PNG" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-          <div class="numbertext">3 / 4</div>
-          <img src="images/Hyperdrive_Station.PNG" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-          <div class="numbertext">4 / 4</div>
-          <img src="images/Danger in the valley.PNG" style="width:100%">
-        </div>
-    
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-        <!-- Caption text -->
-        <div class="caption-container">
-          <p id="caption"></p>
-        </div>
-    
-        <!-- Thumbnail image controls -->
-        <div class="column">
-          <img class="demo" src="images/Mariposa_Character.PNG" onclick="currentSlide(1)" alt="Character sheet for Cyberpunk 2077 inspired concept art, Mariposa">
-        </div>
-    
-        <div class="column">
-          <img class="demo" src="images/Butterfly_Blaster.PNG" onclick="currentSlide(2)" alt="Weapon design for Cyberpunk 2077 inspired concept art, Butterfly Blaster">
-        </div>
-    
-        <div class="column">
-          <img class="demo" src="images/Hyperdrive_Station.PNG" onclick="currentSlide(3)" alt="Enviornment for Cyberpunk 2077 inspired concept art, Hyperdrive Station">
-        </div>
-    
-        <div class="column">
-          <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
-        </div>
-      </div>
-    </div>
 
+
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      })
+  </script>
     <script src="index.js"></script>
-    <script src="path/to/lightbox.js"></script>
+    <script src="scripts/lightbox-plus-jquery.min.js"></script>
   </body>

@@ -53,6 +53,10 @@ h2 {
     padding: 20px, 10px, 10px 20px;
 }
 
+.cen {
+  text-align: center;
+  padding: 5px 100px 5px 100px;
+}
 
 header {
     display: flex; 
@@ -171,27 +175,8 @@ img {
 }
 
 
-div.scroll-container {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-    max-height: 30%;
-    max-width: 30%;
-  }
-div.scroll-container img {
-  padding: 10px;
-}
-
-@media screen and (min-width:600px) {
-  img {
-    display: block;
-    width: 200px;
-  }
-}
-  
 .gallery-container {
-  max-width: 900px;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4px;
@@ -206,10 +191,21 @@ div.scroll-container img {
 
 
 
-html {
-  box-sizing: border-box;
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  max-height: 30%;
+  max-width: 30%;
+}
+div.scroll-container img {
+padding: 10px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+@media screen and (min-width:600px) {
+  img {
+    display: block;
+    width: 200px;
+  }
 }
