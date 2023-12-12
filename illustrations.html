@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Art by Zoe</title>
     <link rel="stylesheet" href="screen.css">
+    <link href="styles/lightbox.min.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="sticky">
@@ -24,50 +25,18 @@
     </nav>
     
     <h2 class="look">ILLUSTRATIONS</h2>
-
-    <div class="row">
-      <div class="col">
-         <img src="images/ZRasico_project5_bw.png" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" alt="Fairies and Flowers Monochrome Version">
-      </div>
-      <div class="col">
-         <img src="images/ZRasico_project5_temp.jpg" onclick="openLightbox();toSlide(5)" class="hover-shadow preview" alt="Fairies and Flowers Temperature Version">
-      </div>
-      <div class="col">
-         <img src="images/Zrasico_project5_extension+proportion.jpg" onclick="openLightbox();toSlide(6)" class="hover-shadow preview" alt="Fairies and Flowers Extension and Proportion Version">
-      </div>
+    <div class="gallery-container">
+      <a data-lightbox="illus" data-title="Illustration 1, Pearlescent currents" href="images/Mermaid.png"><img src="images/Mermaid.png" alt="Mermaid"></a>
+      <a data-lightbox="illus" href="images/Spirit.png"><img src="images/Spirit.png" alt="Spirit"></a>
+      <a data-lightbox="illus" href="images/Star_Gazing.png"><img src="images/Star_Gazing.png" alt="Star gazing"></a>
     </div>
     
-
-         
-    <div id="Lightbox" class="modal">
-      <span class="close pointer" onclick="closeLightbox()">&times;</span>
-      <div class="modal-content">
-        <div class="slide">
-            <img src="images/Mermaid.png" class="image-slide" alt="Pearlescent Currents Artwork">
-        </div>
-        <div class="slide">
-            <img src="images/Spirit.png" class="image-slide" alt="Inner Voice Artwork">
-        </div>    
-        <div class="slide">
-            <img src="images/Star_Gazing.png" class="image-slide" alt="Star Gazing Artwork">
-        </div>
-      
-        <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
-        <a class="next" onclick="changeSlide(1)">&#10095;</a>
-      
-        <div class="dots">
-          <div class="col">
-            <img src="images/Mermaid.png" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Pearlescent Currents Artwork">
-          </div>
-          <div class="col">
-            <img src="images/Spirit.png" class="modal-preview hover-shadow" onclick="toSlide(5)" alt="Inner Voice Artwork">
-          </div>
-          <div class="col">
-            <img src="images/Star_Gazing.png" class="modal-preview hover-shadow" onclick="toSlide(6)" alt="Star Gazing Artwork">
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      });
+  </script>
     <script src="index.js"></script>
+    <script src="scripts/lightbox-plus-jquery.min.js"></script>
   </body>
