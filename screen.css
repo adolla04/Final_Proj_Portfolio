@@ -14,11 +14,12 @@ body {
 }
 
 nav {
-    background-color: #ffd8de;
+    background-color: #c5d3f8;
     margin: auto;
     padding: 10px;
     display: flex;
     align-items: left;
+    border: solid #8595d1;
 }
 
 ul {
@@ -47,8 +48,8 @@ div.navbar {
 
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 3em;
-    font-weight: 400;
+    font-size: 3.5em;
+    font-weight: 300;
     margin: 0;
 }
 
@@ -56,6 +57,7 @@ h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 10px;
     font-weight: 300;
+    font-size: 2em;
     padding: 20px, 10px, 10px 20px;
 }
 
@@ -84,7 +86,7 @@ p {
 }
 
 article {
-    background: #efefef;
+    background: #ebecef;
     margin: 20px;
     padding: 20px;
     border: solid #333;
