@@ -40,10 +40,15 @@ li .columnlist {
     display: block;
 }
 
+div.navbar {
+    font-size: 1.5em;
+}
+
+
 h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 3em;
-    font-weight: 200;
+    font-weight: 400;
     margin: 0;
 }
 
