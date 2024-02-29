@@ -103,8 +103,7 @@ p {
 
 .imgbox {
     background:#fff;
-    width: 600px;
-    min-height: 200px;
+    max-width: 600px;
 }
 
 img {
