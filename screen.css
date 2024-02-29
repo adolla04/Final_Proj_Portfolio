@@ -220,3 +220,7 @@ div.scroll-container img {
     width: 200px;
   }
 }
+
+img.home {
+    width: 100%;
+}
