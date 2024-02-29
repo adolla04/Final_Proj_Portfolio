@@ -217,7 +217,15 @@ div.scroll-container img {
 @media screen and (min-width:600px) {
   img {
     display: block;
-    max-width: 600px;
+    max-width: 200px;
   }
 }
 
+.imgbox {
+    background:#fff;
+    max-width: 600px;
+}
+
+img {
+    width: 100%;
+}
