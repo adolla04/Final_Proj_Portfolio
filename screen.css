@@ -104,6 +104,7 @@ p {
 .imgbox {
     background:#fff;
     width: 600px;
+    min-height: 200px;
 }
 
 img {
