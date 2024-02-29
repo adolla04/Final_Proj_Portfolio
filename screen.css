@@ -217,7 +217,7 @@ div.scroll-container img {
 @media screen and (min-width:600px) {
   img {
     display: block;
-    min-width: 200px;
+    max-width: 600px;
   }
 }
 
